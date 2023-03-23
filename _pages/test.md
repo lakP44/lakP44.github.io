@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "About"
+title: "Introduce 테스트"
 toc: true
 toc_sticky: true
 toc_label: "MYSELF"
