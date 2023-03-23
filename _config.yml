@@ -104,7 +104,7 @@ analytics:
 # Site Author
 author:
   name: "KRH"
-  avatar: "/assets/img/춘식이.png"
+  avatar: "/img/춘식이.png"
   # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "Who's Working For Full Stack Developers"
   location: "Seoul"
