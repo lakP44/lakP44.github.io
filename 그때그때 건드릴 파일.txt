@@ -1,0 +1,2 @@
+기본: _config.yml
+상단 introduce, category, tags: _data/navigation.yml
