@@ -1,4 +1,5 @@
 기본: _config.yml
 상단 introduce, category, tags: _data/navigation.yml
-글쓰기: _pages/md파일들
+페이지 생성: _pages/md파일들
 파비콘 업데이트: \_includes\head\custom.html
+글쓰기: _posts
