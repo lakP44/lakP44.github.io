@@ -1,2 +1,3 @@
 기본: _config.yml
 상단 introduce, category, tags: _data/navigation.yml
+글쓰기: _pages/md파일들
