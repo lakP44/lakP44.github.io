@@ -8,11 +8,11 @@ toc_label: "MYSELF" # toc의 제목
 
 ![icon](/assets/img/춘식이.png)
 
-categories:
+## categories:
 
     - category A
 
-tags:
+## tags:
 
     - test1
     - test2
