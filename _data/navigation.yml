@@ -16,3 +16,13 @@ main:
     url: "/categories/"
   - title: "Tags"
     url: /tags/
+
+sidebar-category:
+  - title: "카테고리"
+    children:
+      - title: "블로그 연습"
+        url: "/categories/#블로그-연습"
+      - title: "테스트1"
+        url: "/categories/test1"
+      - title: "테스트2"
+        url: "/categories/test2"

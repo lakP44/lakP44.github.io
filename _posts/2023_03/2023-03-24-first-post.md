@@ -1,10 +1,10 @@
 ---
-title: "블로그 포스팅하는 방법"
+title: "블로그 포스팅 하는 방법"
 excerpt: "md 파일을 마크다운 문법으로 작성하여 Github 원격 저장소에 업로드 해보자."
 toc: true # 목차
 toc_sticky: true # True = 스크롤을 이동해도 항상 화면 위쪽에 고정됨
 toc_label: "posting_practice" # toc의 제목
-last_modified_at: "2023-03-24 09:18:00 +0900"
+last_modified_at: "2023-03-23 09:18:00 +0900"
 published: true
 categories:
   - blog_practice
