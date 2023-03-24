@@ -30,3 +30,5 @@ tags:
 | toc_icon         |                                                        toc의 아이콘 | temp6 |
 | toc_sticky       | toc의 고정유무, 고정(true)시 스크롤에도 우측상단에 고정되게 보인다. | temp7 |
 | last_modified_at |             게시글 마지막 수정일, 포스터에는 년월일까지 보여집니다. | temp8 |
+
+<script src="https://gist.github.com/lakP44/256b4bf56e7aeb49c195f79a24c3ba87.js"></script>
