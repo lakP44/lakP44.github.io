@@ -1,1 +1,0 @@
-E:&&cd E:\lakP44.github.io&&bundle exec jekyll serve
