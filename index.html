@@ -176,9 +176,45 @@
                 <div class="col-lg-6">
                   <ul>
                     <li>
-                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>25</span>
+                      <i class="bi bi-chevron-right"></i> <strong>나이:</strong>
+                      <span id="age">25</span>
                     </li>
+                    <!-- 다른 리스트 아이템 추가 가능 -->
+                  </ul>
+                
+                  <script>
+                    // ID가 "age"인 span 요소를 가져옵니다.
+                    var ageSpan = document.getElementById("age");
+                
+                    // 초기 생년월일을 설정합니다. (예: 1998년 1월 1일)
+                    var birthDate = new Date("1997-12-27");
+                
+                    // 나이를 갱신하는 함수를 정의합니다.
+                    function updateAge() {
+                      // 현재 날짜를 가져옵니다.
+                      var currentDate = new Date();
+                
+                      // 나이 계산
+                      var age = currentDate.getFullYear() - birthDate.getFullYear();
+                
+                      // 생일이 아직 오지 않았으면 나이에서 1을 빼줍니다.
+                      if (
+                        currentDate.getMonth() < birthDate.getMonth() ||
+                        (currentDate.getMonth() === birthDate.getMonth() &&
+                          currentDate.getDate() < birthDate.getDate())
+                      ) {
+                        age--;
+                      }
+                
+                      // 나이를 업데이트합니다.
+                      ageSpan.textContent = age;
+                    }
+                
+                    // 1년마다 updateAge 함수를 호출합니다.
+                    setInterval(updateAge, 86400); // 365일 * 24시간 * 60분 * 60초 * 1000밀리초
+                  </script>
+
+                  <ul>
                     <li>
                       <i class="bi bi-chevron-right"></i>
                       <strong>Degree:</strong> <span>Bachelor</span>
@@ -246,14 +282,29 @@
               <div class="count-box">
                 <i class="bi bi-journal-richtext"></i>
                 <span
+                  id="portfolioCount"
                   data-purecounter-start="0"
-                  data-purecounter-end="6"
+                  data-purecounter-end="0"
                   data-purecounter-duration="1"
                   class="purecounter"
                 ></span>
                 <p><strong>프로젝트</strong></br>공모전</br>gui 프로그램 개발</br>라이브러리 개발</p>
               </div>
             </div>
+
+            <script>
+              // 포트폴리오의 개수를 가져와서 표시하는 함수
+              function updatePortfolioCount() {
+                // portfolio-links 클래스를 가진 엘리먼트를 선택합니다.
+                var portfolioLinks = document.querySelectorAll('.portfolio-wrap a');
+                
+                // 가져온 포트폴리오 개수를 purecounter 엘리먼트에 설정합니다.
+                document.getElementById('portfolioCount').setAttribute('data-purecounter-end', portfolioLinks.length / 2);
+              }
+            
+              // 페이지 로드 시 포트폴리오 개수 업데이트
+              document.addEventListener('DOMContentLoaded', updatePortfolioCount);
+            </script>
 
             <!-- <div
               class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
@@ -697,7 +748,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img
                   src="assets/img/portfolio/portfolio-6.jpg"
@@ -785,8 +836,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div> -->
+      </section> 
       <!-- End Portfolio Section -->
 
       <!-- ======= Services Section ======= -->
