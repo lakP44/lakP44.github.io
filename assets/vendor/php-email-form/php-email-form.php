@@ -3,12 +3,12 @@
 // $to_email = 'lak5000@naver.com';
 
 // Check if the form is submitted
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get form data
-    $name = $_GET['name'];
-    $email = $_GET['email'];
-    $subject = $_GET['subject'];
-    $message = $_GET['message'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
 
     // Create email headers
     $headers = "From: $name <$email>\r\n";
@@ -40,4 +40,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // If the form is not submitted, return an error
     echo 'error';
 }
-?>
+?> */
